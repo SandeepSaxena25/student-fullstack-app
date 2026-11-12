@@ -1,0 +1,16 @@
+# Dependencies (Yeh GitHub par nahi bhejni hoti)
+node_modules/
+
+# Build output
+dist/
+frontend/dist/
+.wrangler/
+
+# Secret passwords aur Environment files (Sabse zaroori!)
+.dev.vars
+.env
+.env.*
+
+# OS aur Editor files
+.DS_Store
+.vscode/

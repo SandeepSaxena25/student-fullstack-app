@@ -1,9 +1,10 @@
 {
     "name": "student-fullstack-app",
-    "main": "backend/index.ts", // Backend यहाँ से शुरू होगा
+    "main": "backend/index.ts",
     "compatibility_date": "2026-11-10",
     "assets": {
-      "directory": "frontend/dist" // बिल्ड होने के बाद Frontend यहाँ से चलेगा
+      "directory": "./dist",
+      "binding": "ASSETS"
     }
   }
   

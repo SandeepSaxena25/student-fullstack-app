@@ -1,3 +1,6 @@
+Hosted This App on cloadflare : 
+Link : https://student-fullstack-app.nidhi-dev-apps.workers.dev/
+
 एक बिल्कुल साफ और आसान तरीका जिसमें एक ही फोल्डर (Monorepo जैसा सरल स्ट्रक्चर) के अंदर Frontend (React) और Backend (Hono + Drizzle + Neon) अलग-अलग और साफ-सुथरे तरीके से बनते हैं, और GitHub पर Push करते ही Cloudflare पर अपने आप Live हो जाते हैं—नीचे दिया गया है।
 इस तरीके में कोई जादू या छिपा हुआ कोड नहीं है। हर फाइल और हर लाइन का मतलब आपकी आंखों के सामने साफ रहेगा।
 
@@ -284,3 +287,5 @@ git push -u origin main
 	• नीचे Variables and Secrets में जाकर DATABASE_URL नाम से अपना Neon वाला URL डालें और Save and Deploy दबा दें।
 अब जादू देखें: भविष्य में जब भी आप अपने कंप्यूटर पर कोई बदलाव करके git push करेंगे, Cloudflare 30 सेकंड के अंदर आपकी लाइव वेबसाइट को अपने आप अपडेट कर देगा।
 क्या आप चाहते हैं कि मैं इस पूरे स्ट्रक्चर में SEO (Meta Tags) या Login/Authentication जोड़ने का तरीका भी इसी तरह बिल्कुल सरल भाषा में समझाऊं?
+
+

@@ -231,6 +231,36 @@ jsonc
 }
 कोड का इस्तेमाल सावधानी से करें.
 
+Step : drizzle.config.ts
+Yeh error isliye aaya hai kyunki drizzle.config.ts file abhi khali hai ya save (Ctrl + S) nahi hui hai, isliye drizzle-kit ko uske andar dialect: 'postgresql' nahi mila.
+
+Ise Abhi 10 Second mein Kaise Fix Karein?
+
+1. Apne VS Code mein drizzle.config.ts kholein.
+2. Check karein ki file ke upar tab par safed dot (●) toh nahi dikh raha hai (safed dot ka matlab hai file save nahi hui hai).
+3. Usmein yeh code paste karein aur Ctrl + S dabakar save karein:
+typescript
+import { defineConfig } from 'drizzle-kit';
+
+export default defineConfig({
+  schema: './backend/db/schema.ts',
+  out: './drizzle',
+  dialect: 'postgresql',
+  dbCredentials: {
+    url: process.env.DATABASE_URL!,
+  },
+});
+कोड का इस्तेमाल सावधानी से करें.
+4. Ab terminal mein wahi command run karein:
+bash
+
+node --env-file=.dev.vars ./node_modules/drizzle-kit/bin.cjs push
+
+कोड का इस्तेमाल सावधानी से करें.
+File save (Ctrl + S) karke push command run karein—jab [✓] Changes applied likha aa jaye, toh bata dein!
+
+
+
 चरण 5: GitHub पर Push करें और Cloudflare से जोड़ें (Auto-Deploy)
 
 अब जब भी आप कोड बदलकर GitHub पर भेजेंगे, Cloudflare अपने आप वेबसाइट अपडेट कर देगा:

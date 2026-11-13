@@ -1,9 +1,5 @@
 {
   "name": "student-fullstack-app",
   "main": "backend/index.ts",
-  "compatibility_date": "2026-11-10",
-  "assets": {
-    "directory": "./dist",
-    "binding": "ASSETS"
-  }
+  "compatibility_date": "2026-11-10",  
 }
